@@ -8,7 +8,7 @@ import Complete from "./Complete";
 import Stepper from "../Stepper";
 
 const Form = () => {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
 
   //step = 0 => <DatosUsuario />
   //step = 1 => <DatosPersonales />
