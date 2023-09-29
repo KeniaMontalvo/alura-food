@@ -15,10 +15,15 @@ const Form = () => {
   //step = 2 => <DatosEntrega />
   //step = 3 => <Complete />
 
+  const updateStep = (step) => {
+    console.log("actualizar paso", step)
+    setStep(step)
+  }
+
   const steps = {
-    0: <DatosUsuario />,
-    1: <DatosPersonales />,
-    2: <DatosEntrega />,
+    0: <DatosUsuario updateStep={updateStep} />,
+    1: <DatosPersonales updateStep={updateStep} />,
+    2: <DatosEntrega updateStep={updateStep} />,
     3: <Complete />
   }
 
